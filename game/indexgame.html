@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sliding Puzzle Game</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="stylegame.css" />
+  </head>
+  <body>
+    
+      <!-- Navigation Bar -->
+  <nav id="game-nav" class="hide">
+    <span>
+      <a href="indexgame.html">
+      <img width="53" src="assets/images/logo.svg" alt="Netflixlogo" />
+    </a>
+    </span>
+    <div>
+      <a href="http://localhost/new/sign.html">
+        <button class="btn btn-red-sm">Sign In</button>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Game Heading -->
+  <h1 id="game-heading">Movie Mystery Challenge</h1>
+    <div class="cover-screen">
+      <p id="result"></p>
+      <button id="start-button">Start Game</button>
+    </div>
+    <div id="moves"></div>
+    <div class="slider-game">
+      <div class="container"></div>
+      <div class="original-image">
+        <img src="aven.jpg" alt="original_img" />
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script src="scriptgame.js"></script>
+  </body>
+</html>

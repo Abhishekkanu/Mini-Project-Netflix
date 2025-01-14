@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Contact</title>
+    <link rel="stylesheet" href="foot.css">
+
+    <style>
+        .link {
+            text-align: center;
+            /* Center-aligns text horizontally */
+            display: flex;
+            /* Makes the container a flexbox */
+            justify-content: center;
+            /* Horizontally centers the content */
+            align-items: center;
+            /* Vertically centers the content */
+            height: 50px;
+            /* Set a height to center vertically (adjust as needed) */
+        }
+
+        .link a {
+            font-weight: bold;
+            color: rgb(37, 26, 26);
+            text-decoration: none;
+            /* Remove underline */
+            transition: color 0.3s ease, transform 0.3s ease;
+            /* Smooth hover effect */
+        }
+
+        .link a:hover {
+            color: red;
+            /* Change color on hover */
+            transform: scale(1.1);
+            /* Slightly enlarge the link on hover */
+            text-decoration: underline;
+            /* Optional: Add underline on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <nav>
+            <span>
+                <a href="index.html"> <img width="86" src="logo.svg" alt="Netflix Logo"></a> </span>
+            <div>
+                <a href="index.html">
+                    <button class="btn">Join Netflix</button>
+                </a>
+                <a href="http://localhost/new/sign.html">
+                    <button class="btn btn-red-sm">Sign In</button>
+                </a>
+            </div>
+        </nav>
+
+
+        <div class="content">
+            <h1><span>Content Grievances in India</span></h1>
+
+            <div class="first">
+                <h3 style="color: black;">About content grievances</h3>
+                <p>If you have any grievances related to a title currently available in India or its age ratings, title
+                    descriptions or synopses, content advisories or tags, or parental control features, you can raise a
+                    content grievance with us by filling out the form.
+                </p>
+            </div>
+
+            <div class="second">
+                <h3 style="color: black;">Netflix’s Content Grievance Officer</h3>
+                <p>Manas Gaur is our Content Grievance Officer. You can raise your content grievance with him by filling
+                    out the form above.
+                </p>
+            </div>
+
+            <h1><span>Quick Links</span></h1>
+
+
+            <div class="link">
+                <a href="index.html">Reset password</a>
+            </div>
+
+            <div class="link">
+                <a href="http://localhost/new/sign.html">Update email</a>
+            </div>
+
+            <div class="link">
+                <a href="index.html">Get help signing in</a>
+            </div>
+
+            <div class="link">
+                <a href="http://localhost/new/sign.html">Update payment method</a>
+            </div>
+</body>
+
+</html>

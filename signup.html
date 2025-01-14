@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signin Page</title>
+    <link rel="stylesheet" href="style_signin.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html"><img src="assets/images/logo.svg" alt="logo"></a>
+    </nav>
+    <div class="form-wrapper">
+        <h2>Welcome back!
+            Joining Netflix is easy.</h2>
+        <br>
+        <h3 style="color: white;">Create your password and you'll be watching in no time.</h3>
+        <form action="connect.php" method="post">
+            <input type="hidden" name="action" value="register">
+            <div class="form-control">
+                <input type="text" required name="firstname">
+                <label>First Name</label>
+            </div>
+            <div class="form-control">
+                <input type="text" required name="lastname">
+                <label>Last Name</label>
+            </div>
+            <div class="form-control">
+                <input type="text" required name="email">
+                <label>Email or Mobile Number</label>
+            </div>
+            <div class="form-control">
+                <input type="password" required name="password">
+                <label>Password</label>
+            </div>
+            <button type="submit">Join Now</button>
+            <div class="form-help">
+
+                <a href="contact.html">Need help?</a>
+            </div>
+        </form>
+
+
+    </div>
+    <section class="first"></section>
+
+</body>
+
+</html>

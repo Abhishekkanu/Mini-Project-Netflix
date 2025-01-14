@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUN SECTION</title>
+    <link rel="stylesheet" href="foot.css">
+    <style>
+        .trivia-game {
+            text-align: center;
+            margin: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        #options {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .option {
+            padding: 10px 20px;
+            background-color: #ff6f61;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .option:hover {
+            background-color: #d94c43;
+        }
+
+        #score {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        #next-question {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        #next-question:hover {
+            background-color: #45a049;
+        }
+
+        #watch-now {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #8318bd;
+            border: none;
+            color: white;
+            cursor: pointer;
+            display: none;
+        }
+
+        #watch-now:hover {
+            background-color: #5f1070;
+        }
+
+        #movie-image-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #movie-image {
+            width: 300px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        #answer-message {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        body {
+            background-image: url('tools/images/bgimg.jpg');
+            background-size: cover;
+            background-position: auto;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <span>
+            <a href="index.html">
+                <img width="86" src="logo.svg" alt="Netflix Logo">
+            </a></span>
+        <div>
+            <a href="index.html">
+                <button class="btn">Join Netflix</button>
+            </a>
+            <a href="http://localhost/new/sign.html">
+                <button class="btn btn-red-sm">Sign In</button>
+            </a>
+        </div>
+    </nav>
+
+    <div class="trivia-game">
+        <h1>Let's Have Some Fun</h1>
+        <h2>Guess the Movie by its Dialogue</h2>
+        <p id="question">What is the movie title for the following quote?</p>
+
+        <!-- Movie Image Container -->
+        <div id="movie-image-container">
+            <img id="movie-image" src="" alt="Movie Poster" style="display: none;" />
+        </div>
+
+        <div id="options">
+            <button class="option" data-answer="a">Option A</button>
+            <button class="option" data-answer="b">Option B</button>
+            <button class="option" data-answer="c">Option C</button>
+            <button class="option" data-answer="d">Option D</button>
+        </div>
+
+        <div id="answer-message"></div>
+        <p id="score">Score: 0</p>
+        <button id="next-question">Next Question</button>
+        <button id="watch-now">Watch Now</button>
+    </div>
+
+    <script src="scriptquiz.js"></script>
+</body>
+
+</html>
