@@ -17,8 +17,10 @@
             Joining Netflix is easy.</h2>
         <br>
         <h3 style="color: white;">Create your password and you'll be watching in no time.</h3>
-        <form action="connect.php" method="post">
-            <input type="hidden" name="action" value="register">
+        <!-- <form action="connect.php" method="post">
+            <input type="hidden" name="action" value="register"> -->
+       
+        <form onsubmit="alert('Demo only – no data is collected or stored.'); return false;">    <!-- ✅ Demo-only form: does NOT send data anywhere -->
             <div class="form-control">
                 <input type="text" required name="firstname">
                 <label>First Name</label>
